@@ -14,6 +14,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -74,11 +75,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
 
         LatLng london = new LatLng(51.5074, 0.1278);
-        mMap.addMarker(new MarkerOptions().position(london).title("Marker in London"));
+        mMap.addMarker(new MarkerOptions().position(london).title("Marker in London").icon(BitmapDescriptorFactory.fromResource(R.drawable.london)));
         LatLng nyc = new LatLng(40.7128, -74.0060);
-        mMap.addMarker(new MarkerOptions().position(nyc).title("Marker in NYC"));
+        mMap.addMarker(new MarkerOptions().position(nyc).title("Marker in NYC").icon(BitmapDescriptorFactory.fromResource(R.drawable.nyc)));
         LatLng berlin = new LatLng(52.5200, 13.4050);
-        mMap.addMarker(new MarkerOptions().position(berlin).title("Marker in Berlin"));
+        mMap.addMarker(new MarkerOptions().position(berlin).title("Marker in Berlin").icon(BitmapDescriptorFactory.fromResource(R.drawable.berlin)));
 
         mMap.moveCamera(CameraUpdateFactory.newLatLng(london));
 
