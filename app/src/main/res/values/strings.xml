@@ -2,4 +2,5 @@
     <string name="app_name">My Application Maps</string>
     <string name="title_activity_maps">Map</string>
     <string name="go_to_map">Go To Map!</string>
+    <string name="simple_app_with_use_of_google_maps_api">Simple app with use of Google Maps API. Includes markers for Berlin, London, NYC, and Paris.</string>
 </resources>
